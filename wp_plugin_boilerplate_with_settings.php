@@ -72,18 +72,17 @@ class CamelCaseClassName {
 	}
 
 	public function register_plugin_settings() {
-
 		// Add settings section(s)
 		// http://codex.wordpress.org/Function_Reference/add_settings_section
 		add_settings_section(
 			$this->section_id,
 			$this->section_title,
 			$this->section_callback,
-			$this->plugin_slug
+			$this->options_page_menu_slug
 		);
 
 		// Add settings field(s)
-			// e.g. add_settings_field( $id, $title, $callback, $page, $section, $args );
+		// e.g. add_settings_field( $id, $title, $callback, $page, $section, $args );
 		// http://codex.wordpress.org/Function_Reference/add_settings_field
 
 		// Register plugin settings
