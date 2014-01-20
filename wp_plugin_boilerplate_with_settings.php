@@ -48,7 +48,7 @@ class CamelCaseClassName {
 		// add_settings_section variables
 		$this->section_id = '';
 		$this->section_title = '';
-		$this->section_callback = '';
+		$this->section_callback = array( $this, 'example_section_callback' );
 		$this->section_page = '';
 
 		// register_setting/register_settings_fields variables
